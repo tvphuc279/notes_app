@@ -1,0 +1,30 @@
+body{
+  font-size: 14px;
+  line-height: 20px;
+  color: #f3f3f3;
+  background-color: #000;
+  font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+  button, .btn{
+    background: #f15b2a;
+    border: solid 1px #f15b2a;
+    color: #fff;
+    &:hover{
+      background: #fd7346;
+      border: solid 1px #fd7346;
+    }
+  }
+  a{
+    color: #fd7346;
+    text-decoration: none;
+    &:hover{
+      color: #fd7346;
+    }
+  }
+  h1, h2, h3, h4{
+    color: #f3f3f3;
+  }
+}
+
+.hide{
+  display: none;
+}
