@@ -1,0 +1,13 @@
+.top-note-content
+  = form_for Note.new, html: {class: 'new-note-form', remote: true} do |f|
+    = f.text_field :title, placeholder: 'Enter title of note'
+    = f.submit t('note.titles.add'), class: 'btn btn-outline-secondary btn-sm btn-add-new-note'
+.notes-content
+  .left-content.note-titles-col
+    %ul
+      - @notes.each do |note|
+        %li
+          =link_to note.title, edit_note_path(note), class: "note-title #{@default_note.try(:id) == note.try(:id) ? 'active-note' : ''}", remote: true, data: {:'id' => note.id}
+  .right-content.note-content-col
+    - if @default_note
+      = render 'note_content_form', note: @default_note

@@ -1,0 +1,5 @@
+%li.nav-item{class: "#{['notes'].include?(params[:controller]) ? 'active-nav' : ''}"}
+  = link_to notes_path, class: 'nav-link' do 
+    = t('note.titles.notes')
+%li.nav-item
+  = link_to 'Link', 'javascript:;', class: 'nav-link'

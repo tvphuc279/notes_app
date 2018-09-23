@@ -1,0 +1,4 @@
+- if note.present?
+  = form_for note, method: :put, html: {class: 'note-form', remote: true} do |f|
+    = f.text_area :content, cols: 20, rows: 40
+    = f.submit t('note.titles.save'), class: 'btn btn-outline-secondary btn-save-note-content'

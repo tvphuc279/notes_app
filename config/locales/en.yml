@@ -38,3 +38,15 @@ en:
       email: Email 
       password: Password
       sign_in_button: Sign in
+      contact_me: Contact me
+      phone: 'Phone:'
+      address: 'Address:'
+      skype: 'Skype:'
+      email: 'Email:'
+      name: 'Name:'
+  note:
+    titles:
+      new_note: New note
+      add: '+ Add'
+      save: Save
+      notes: Notes

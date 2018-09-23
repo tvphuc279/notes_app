@@ -1,0 +1,2 @@
+$(".note-content-col").html("<%= escape_javascript(render 'notes/note_content_form', note: @note) %>");
+Note.handleEditNote("<%= @note.id%>");

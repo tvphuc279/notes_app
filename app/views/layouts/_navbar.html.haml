@@ -1,0 +1,13 @@
+- if user_signed_in?
+  %nav.navbar.navbar-expand.navbar-dark.custom-navbar
+    = link_to 'PT', 'javascript:;', class: 'navbar-brand'
+    %button.navbar-toggler{"aria-controls" => "navbarsItems", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarsItems", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarsItems.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        = render 'layouts/navbar_items'
+      .sign-out-content
+        %span
+          = current_user.try(:email)
+          |
+          = link_to 'Sign out', destroy_user_session_path, method: :delete

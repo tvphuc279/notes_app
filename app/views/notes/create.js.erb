@@ -1,0 +1,3 @@
+$('.note-titles-col ul').append('<li><a href="<%= @edit_note_url%>" data-id="<%= @note.id%>" class="note-title" data-remote="true"><%= @note.title%></a></li>')
+$(".note-content-col").html("<%= escape_javascript(render 'notes/note_content_form', note: @note) %>");
+Note.handleNewNote("<%= @note.id%>");

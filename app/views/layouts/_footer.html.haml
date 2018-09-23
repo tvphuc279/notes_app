@@ -1,0 +1,51 @@
+%footer.Footer
+  .Container.Footer-container
+    .Container--default
+      .Footer-top
+        .Footer-contact
+          %h3= t('common.titles.contact_me')
+          %div
+            %span.Footer-contact-title= t('common.titles.name')
+            %span
+              %a{href: 'javascript:;'}
+                %span Phuc Truong
+          %div
+            %span.Footer-contact-title= t('common.titles.email')
+            %span
+              %a{href: 'mailto:tvphuc279@gmail.com'}
+                %span tvphuc279@gmail.com
+          %div
+            %span.Footer-contact-title= t('common.titles.phone')
+            %span
+              %a{href: 'javascript:;'}
+                %span 090-818-5536
+          %div
+            %span.Footer-contact-title= t('common.titles.skype')
+            %span
+              %a{href: 'javascript:;'}
+                %span tvphuc279
+        .Footer-address
+          %h3 Address
+          %div 4/3/3 Nguyen Huu Tho street, Ben Luc district
+          %div
+            %span.inline Long An province
+        .Footer-social          
+          %a.Icon.Icon--linkedin{:href => "https://www.linkedin.com/in/tvphuc279/", :target => "_blank", :title => "Phuc Truong | Linkedin"}
+      .Footer-information
+        .Footer-information-left
+          %nav.Footer-menu
+            %ul.Menu
+              %li.Menu-item.Menu-item--type-aboutUs.Menu-item--object-aboutUs
+                %a{:href => "javascript:;", :title => "Careers"} Careers
+              %li.Menu-item.Menu-item--type-page.Menu-item--object-page
+                %a{:href => "javascript:;", :title => "Contact Us"} Contact Us
+              %li.Menu-item.Menu-item--type-page.Menu-item--object-page
+                %a{:href => "javascript:;", :title => "Site Map"} Site Map
+              %li.Menu-item.Menu-item--type-page.Menu-item--object-page
+                %a{:href => "javascript:;", :title => "Privacy Policy"} Privacy Policy
+              %li.Menu-item.Menu-item--type-page.Menu-item--object-page
+                %a{:href => "javascript:;", :title => "Terms of Use"} Terms of Use
+          .Footer-copyright= "Copyright © #{Time.now.in_time_zone.year} PT | All rights reserved"
+        .Footer-information-right
+          %p
+            %a.mvpmarketlink{:href => "javascript:;", :target => "_blank"} Website Design by PT
