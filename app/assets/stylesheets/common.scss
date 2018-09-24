@@ -60,3 +60,16 @@ body{
     color: #f15b2a !important;  
   }
 }
+
+.Custom-Footer-Content{
+  .Menu{
+    .Menu-item{
+      a{
+        color: #f15b2a;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

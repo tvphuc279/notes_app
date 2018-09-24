@@ -136,7 +136,7 @@ footer, header{
     text-align: left;
 }
 }.Footer-information a {
-    color: #ffc91f!important;
+    //color: #ffc91f!important;
     font-weight: 300!important;
 }
 .no-touchevents .Footer-information a:hover {
@@ -355,9 +355,9 @@ footer, header{
     height: 100%}
 
 .Icon--linkedin {
-  background-image: url('/assets/icon-linkedin.svg');
-  &:hover{
-    background-image: url('/assets/icon-linkedin-white.svg');
+  background-image: image-url("icon-linkedin.svg");
+  &:hover{    
+    background-image: image-url("icon-linkedin-white.svg");
     z-index: 2;
     opacity: 1;
   }

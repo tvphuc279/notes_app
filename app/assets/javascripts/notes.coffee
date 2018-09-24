@@ -15,6 +15,7 @@
   handleNewNote: (note_id) ->
     @clearSelectedNote()
     @setNoteSelected(note_id)
+    $('.new-note-form #note_title').val('')
   
   clearSelectedNote: ->
     $('.note-title').removeClass('active-note')
